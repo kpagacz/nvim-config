@@ -49,7 +49,7 @@ return {
         end,
       },
       {
-        "<leader>fe",
+        "<leader>dd",
         function()
           require("telescope.builtin").diagnostics()
         end,
