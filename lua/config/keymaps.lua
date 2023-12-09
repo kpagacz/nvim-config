@@ -43,4 +43,4 @@ end, opts)
 
 -- Copilot
 keymap.set("n", "<leader>pd", ":Copilot disable<Return>", opts)
-keymap.set("n", "<leader>pe", ":Copilot enable", opts)
+keymap.set("n", "<leader>pe", ":Copilot enable<Return>", opts)

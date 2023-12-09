@@ -14,10 +14,17 @@ return {
   -- Notification timeout
   {
     "rcarriga/nvim-notify",
-    opts = {
-      timeout = 5000,
-      background_color = "#000000",
-    },
+    config = function(_, opts)
+      local notify = require("notify")
+      opts = vim.tbl_deep_extend("force", opts, {
+        stages = "fade_in_slide_out",
+        background_colour = "#000000",
+        timeout = 5000,
+        render = "simple",
+        fps = 120,
+      })
+      notify.setup(opts)
+    end,
   },
 
   -- Bufferline (this thing that shows buffers I guess)

@@ -7,16 +7,17 @@ return {
   },
   -- {
   --   "hrsh7th/nvim-cmp",
+  --   version = false, -- last release is way too old
   --   dependencies = {
   --     "hrsh7th/cmp-nvim-lsp",
-  --     "hrsh7th/cmp-buffer",
-  --     "hrsh7th/cmp-path",
-  --     "saadparwaiz1/cmp_luasnip",
+  --     "neovim/nvim-lspconfig",
   --   },
-  --   opts = function()
-  --     local capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities())
+  --   config = function()
+  --     local capabilities = require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
   --     capabilities.textDocument.completion.completionItem.snippetSupport = false
-  --     return capabilities
+  --     require("lspconfig").rust.setup({
+  --       capabilities = capabilities,
+  --     })
   --   end,
   -- },
 }
