@@ -14,7 +14,10 @@ return {
   -- Notification timeout
   {
     "rcarriga/nvim-notify",
-    opts = { timeout = 5000 },
+    opts = {
+      timeout = 5000,
+      background_color = "#000000",
+    },
   },
 
   -- Bufferline (this thing that shows buffers I guess)
@@ -38,7 +41,7 @@ return {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
     opts = {
-      options = { theme = "solarized_dark" },
+      options = { theme = "vscode" },
     },
   },
 

@@ -42,5 +42,5 @@ keymap.set("n", "<C-j>", function()
 end, opts)
 
 -- Copilot
-keymap.set("n", "<leader>cd", ":Copilot disable<Return>", opts)
-keymap.set("n", "<leader>ce", ":Copilot enable", opts)
+keymap.set("n", "<leader>pd", ":Copilot disable<Return>", opts)
+keymap.set("n", "<leader>pe", ":Copilot enable", opts)
